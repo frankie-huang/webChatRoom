@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="index.js"></script>
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link href="index.css" rel="stylesheet">
+    <title>聊天室网页端</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <!-- <div class="item item-center"><span>昨天 12:35</span></div> -->
+            <div class="item item-center"><span>你已添加了ChatGPT，现在可以开始聊天了。</span></div>
+            <div class="item item-left">
+                <div class="avatar"><img src="images/chatgpt-icon.png" /></div>
+                <div class="bubble bubble-left">你好，我是ChatGPT，你可以同我聊天，或者咨询任何问题。<br>在最下方输入框编辑文本并发送，片刻之后我会回复你的。</div>
+            </div>
+
+            <!-- <div class="item item-right"><div class="bubble bubble-right">好的，那咱们开始吧。</div><div class="avatar"><img src="images/bluecat.webp" /></div></div> -->
+        </div>
+        <div class="input-area">
+            <textarea name="text" id="textarea" onkeydown="enter_btn(event.keyCode)"></textarea>
+            <div class="button-area">
+                <button id="send-btn" onclick="send()">发 送</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
